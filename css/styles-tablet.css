@@ -1,0 +1,122 @@
+body {
+	background-image: url("../img/background-pic.jpg");
+}
+
+.main-pic {
+display: flex;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 30px;
+width: 100%;
+max-width:480px;
+box-shadow: 7px 7px 7px grey;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+box-shadow: 7px 7px 7px grey;
+margin-top: 100px;
+margin: auto;
+width: 100%;
+max-width:720px;
+background-color: #e2dcdc;
+}
+
+.header-text {
+margin-right: 20px;
+margin-top: 15px;
+width: 100%;
+font-family: Trebuchet MS, arial;
+font-size: 30px;
+font-style: normal;
+text-align: right;
+}
+
+.header-subtext {
+width: 100%;
+margin-top: 0px;
+font-family: Trebuchet MS, arial;
+font-size: 20px;
+font-style: normal;
+text-align: right;
+}
+
+.header-body {
+box-shadow: 7px 7px 7px grey;
+display: flex;
+max-width: 1080px;
+width: 100%;
+background-color: #fffcfc;
+}
+
+.u-logo {
+margin-top: 15px;
+max-height: 75px;
+height: 100%;
+}
+
+.f-work {
+width: 100%;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+font-size: 30px;
+text-decoration: underline;
+font-family: trebuchet ms, arial;
+}
+
+.resume-body {
+max-width: 480px;
+width: 100%;
+margin: auto;
+box-shadow: 7px 7px 7px grey;
+background-color: white;
+}
+
+.resume-img {
+max-width: 480px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.img-title {
+margin-left: 20px;
+text-align: center;
+font-family: Trebuchet ms, arial;
+width: 100%;
+}
+
+.lion-card {
+{order: 1;}
+margin-top: 20px;
+margin-left: 20px;
+max-width: 200px;
+width:100%;
+box-shadow: 7px 7px 7px grey;
+}
+
+.weather-card {
+{order: 2;}
+margin-top: 20px;
+margin-left: 20px;
+max-width: 200px;
+width: 100%;
+box-shadow: 7px 7px 7px grey;
+}
+
+.calculator-card {
+{order: 3;}
+position: abosolute;
+margin-top: 20px;
+margin-left: 20px;
+max-width: 200px;
+width: 100%;
+box-shadow: 7px 7px 7px grey;
+}
+
+.sources {
+margin-top: 20px;
+font-size: 7px;
+text-align: right;
+}

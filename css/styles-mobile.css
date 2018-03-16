@@ -1,0 +1,111 @@
+body {
+	background-image: url("../img/background-pic.jpg");
+}
+
+.main-pic {
+display: flex;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 30px;
+width: 100%;
+max-width:340px;
+box-shadow: 7px 7px 7px grey;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+box-shadow: 7px 7px 7px grey;
+max-width: 1080px;
+width: 100%;
+background-color: #e2dcdc;
+}
+
+.header-text {
+margin-right: 20px;
+width: 100%;
+font-family: Trebuchet MS, arial;
+font-size: 20px;
+font-style: normal;
+text-align: right;
+}
+
+.header-subtext {
+width: 100%;
+font-family: Trebuchet MS, arial;
+font-size: 10px;
+font-style: normal;
+text-align: right;
+}
+
+.header-body {
+box-shadow: 7px 7px 7px grey;
+display: flex;
+max-width: 1080px;
+width: 100%;
+margin: auto;
+background-color: #fffcfc;
+}
+
+.u-logo {
+max-height: 50px;
+height: 100%;
+}
+
+.f-work {
+width: 100%;
+margin-top: 20px;
+text-align: center;
+font-size: 20px;
+text-decoration: underline;
+font-family: trebuchet ms, arial;
+}
+
+.resume-body {
+max-width: 340px;
+width: 100%;
+margin: auto;
+box-shadow: 7px 7px 7px grey;
+background-color: white;
+}
+
+.resume-img {
+width: 100%;
+}
+
+.img-title {
+text-align: center;
+font-family: Trebuchet ms, arial;
+font-size: 10px;
+width: 100%;
+}
+
+.lion-card {
+margin-top: 20px;
+margin-left: 65px;
+max-width: 200px;
+width:100%;
+box-shadow: 7px 7px 7px grey;
+}
+
+.weather-card {
+margin-top: 20px;
+margin-left: 65px;
+max-width: 200px;
+width: 100%;
+box-shadow: 7px 7px 7px grey;
+}
+
+.calculator-card {
+margin-top: 20px;
+margin-left: 65px;
+max-width: 200px;
+width: 100%;
+box-shadow: 7px 7px 7px grey;
+}
+
+.sources {
+margin-top: 20px;
+font-size: 7px;
+text-align: right;
+}
