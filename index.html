@@ -9,73 +9,259 @@
   <link rel="stylesheet" media="screen and (min-width: 801px)" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header-body sticky">
-      <a href="https://github.com/steezmyster"><img class="header-pic" src="images/ytubePic.png" alt="youtube logo"/></a>
-      <a href="https://github.com/steezmyster"><img class="header-pic" src="images/instaPic.png" alt="instagram logo"/></a>
-      <a href="https://github.com/steezmyster"><img class="header-pic" src="images/githubPic.png" alt="github logo"/></a><hr />
-      <div class="header-title">
-        Matt's Developer Portfolio
-      </div>
-      <header class="header-text">
-          <div class="header-element" onclick="goHome()">Home</div>
-          <div class="header-element" onclick="goProjects()">Projects</div>
-          <div class="header-element" onclick="goAbout()">About</div>
-          <div class="header-element" onclick="goContact()">Contact</div>
-      </header>
-    </div>
-    <div class="body-container">
-      <div class="body-text">
-      <img class="web-pic" src="images/webdevPic.png" alt="picture of sunset" />
-      Freelance Web Designer & Developer based in Phoenix, Arizona.<br /> Highly experienced in designing & developing custom Wordpress websites. <hr />Fully responsive, custom designed Wordpress CMS websites
-      <img class="main-pic" src="images/main-pic.jpg" alt="picture of sunset" />
+  <div class="header-nav sticky">
+    <div class="header-element" onclick="goHome()">Home
+      <div class="selector-nav">
       </div>
     </div>
-    <div class="resume-body">
-        <section class="f-work">Projects
-          <div class="memCard-body">
-            <hr/>
-            <p class="resume-title">Memory Card Matching Game</p>
-              <img class="resume-img" src="images/matchingCard.png" onclick="openLightBox('images/matchingCard.png')" alt="Matching Card Game">
-            A modern take on the classing matching card game. This browser based game features a star rating based on performance, a move counter, and a timer. To win simply match all cards on the board, then a pop up box will appear congratulating the player and showing them their stats from the game and giving them an option to restart.
-            <hr />
-            <p class="resume-title">Frogger Arcade Game</p>
-              <img class="resume-img" src="images/froggerGame.png" onclick="openLightBox('images/froggerGame.png')" alt="Frogger Arcade Game">
-            A classic recreation of the popular arcade game frogger. Features enemy characters that move dynamically through the map that the player must avoid. To win, the player must make it across the road to the water using the arrow keys without running into an enemy character. After you make it to the water the player is greeted with a pop up dialog congratulating them and telling them their stats for the game.
-            <hr / />
-          </div>
-        </section>
+    <div class="header-element" onclick="goProjects()">Projects
+      <div class="selector-nav">
       </div>
-      <div class="about-body">
-        <section class="f-work">About
-          <div class="about-text">
-            <hr />
-            <img class="about-img" src="images/aboutPic.jpg" alt="youtube logo"/>
-            Education:
-            Skills:
-            Experience:
-          </div>
-        </section>
+    </div>
+    <div class="header-element" onclick="goAbout()">About
+      <div class="selector-nav">
       </div>
-      <div class="contact-body">
-        <footer class="f-work">Contact
-          <div class="contact-text">
-            <hr />
-            <a href="https://github.com/steezmyster"><img class="header-pic" src="images/ytubePic.png" alt="youtube logo"/></a>
-            <a href="https://github.com/steezmyster"><img class="header-pic" src="images/instaPic.png" alt="instagram logo"/></a>
-            <a href="https://github.com/steezmyster"><img class="header-pic" src="images/githubPic.png" alt="github logo"/></a>
-          </div>
-        </footer>
+    </div>
+    <div class="header-element" onclick="goContact()">Contact
+      <div class="selector-nav">
       </div>
-         <p class="sources">wwww.udactiy.com, www.pinterest.com, https://wallup.net</p>
-         <div id="light-box">
-          <img src="" id="light-img" />
-         </div>
+    </div>
   </div>
+    <header class="header-body">
+      <div class="header-filter">
+      </div>
+      <img class="header-pic" src="images/office.jpg" />
+    </header>
+    <div id="main-slider" class="main-slide-container" onmouseover="disableOverflow(0)" onmouseout="enableOverflow(0)">
+    <div class="container">
+    <div class="main-body">
+      <img class="web-pic" src="images/webdevPic.png" alt="picture of sunset" />
+      <p class="desc-text"> Freelance Web Designer & Developer based in Phoenix, Arizona.<br /> Highly experienced in designing & developing custom Wordpress websites. <hr /></p>
+      <div class="flex-row-text">
+        <p>Fully responsive, custom designed Wordpress CMS websites</p>
+        <img class="main-pic" src="images/main-pic.jpg" alt="picture of sunset" />
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="slider" id="slider" onmouseover="disableOverflow(1)" onmouseout="enableOverflow(1)">
+        <div class="p-arrow-l">
+          <img class="arrow-icon" src="images/left.png" />
+        </div>
+        <div class="p-arrow-r">
+          <img class="arrow-icon" src="images/right.png" />
+        </div>
+        <div class="holder">
+          <div class="slide" id="slide-0"><div class="p-title">Replica Example Site</div>
+          <img class="slide-pic" src="images/Wordpress.jpg" /><div class="p-des-container">
+            <div class="p-des">I recreated the samsung website as an example. It features a dynamic navigation bar, media slide section, search interface, and cart interface. Website is also responsive and works on mobile and tablets with an optimized layout.</div></div>
+        </div>
+          <div class="slide" id="slide-1"><div class="p-title">Matching Card Game</div>
+          <img class="slide-pic" src="images/matchingCard.png" /><div class="p-des-container">
+            <div class="p-des">
+            A modern take on the classing matching card game. To win simply match all cards on the board, then a pop up box will appear congratulating the player and showing them their stats from the game and giving them an option to restart.
+          </div>
+        </div>
+          </div>
+          <div class="slide" id="slide-2"><div class="p-title">Frogger Arcade Game</div>
+          <img class="slide-pic" src="images/froggerGame.png" /><div class="p-des-container">
+            <div class="p-des">
+          A classic recreation of the popular arcade game frogger. Features enemy characters that move dynamically through the map that the player must avoid. To win, the player must make it across the road to the water using the arrow keys without running into an enemy character.
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="slide-btns">
+        <div class="s-btn">
+        </div>
+        <div class="s-btn">
+        </div>
+        <div class="s-btn">
+        </div>
+      </div>
+    </div>
+    <div class="about-body">
+      <div class="a-slide">
+        <div class="a-bio">
+          <div class="a-bio-header">
+            <p class="a-bio-text">
+              About
+            </p>
+          </div>
+          <div class="a-content">
+          <img class="a-img" src="images/about.png"/>
+          <div class="a-text" >
+            Hey I'm Matt! I'm a front end web develper stationed in Phoenix, Arizona. I have a strong background in computer science as well as experience in graphic design. I specialize in wordpress sites but I'm also very familiar with javascript and have built some browser based games in the past. Quality is my main focus, I'm constantly trying to learn new and more efficient ways to do things and staying up to date on the latest trends in development.
+          </div>
+          <div class="a-div"></div>
+          <div class="skill-container">
+            <p class="skill-title">
+              Javascript
+            </p>
+            <div class="s-bar-container">
+              <div class="s-bar1">
+              </div>
+            </div>
+            <p class="skill-title">
+              HTML
+            </p>
+            <div class="s-bar-container">
+              <div class="s-bar2">
+              </div>
+            </div>
+            <p class="skill-title">
+              CSS
+            </p>
+            <div class="s-bar-container">
+              <div class="s-bar3">
+              </div>
+            </div>
+            <p class="skill-title">
+              Photoshop
+            </p>
+            <div class="s-bar-container">
+              <div class="s-bar4">
+              </div>
+            </div>
+            <p class="skill-title">
+              React
+            </p>
+            <div class="s-bar-container">
+              <div class="s-bar5">
+              </div>
+            </div>
+            <p class="skill-title">
+              Responsive Design
+            </p>
+            <div class="s-bar-container">
+              <div class="s-bar6">
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="map-container">
+            <div class="mapmarker-container">
+              <img class="mapmarker" src="images/mapmarker.png" />
+            </div>
+            <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="contact-body">
+      <div class="a-slide">
+        <div class="a-bio">
+          <div class="a-bio-header">
+            <div class="a-bio-text">
+              Contact
+            </div>
+          </div>
+          <div class="c-content">
+            <img class="c-pic" src="images/contact.png"/>
+            <div class="c-text">
+              <ul class="c-info">
+                <li class="li-text">E-Mail:</li>
+                <li class="li-text">Fax:</li>
+                <li class="li-text">Phone:</li>
+                <li class="li-text">Address:</li>
+              </ul>
+              <ul class="c-info-text">
+                <li class="li-text">Matthewgrant45@yahoo.com</li>
+                <li class="li-text">1-480-987-5426</li>
+                <li class="li-text">1-480-707-1930</li>
+                <li class="li-text">841 E. 5th Ave., Mesa,AZ 85204</li>
+              </ul>
+            </div>
+          </div>
+          <div class="c-contain">
+          <div class="c-form-container">
+            <div class="c-form-title">Follow Me On Social Media</div>
+              <div class="social-container">
+                <img class="social" src="images/social0.png" />
+                <img class="social" src="images/social1.png" />
+                <img class="social" src="images/social2.png" />
+                <img class="social" src="images/social3.png" />
+                <img class="social" src="images/social4.png" />
+                <img class="social" src="images/social5.png" />
+              </div>
+          </div>
+          <div class="c-form-container">
+            <div class="c-form-title">Feel free to contact me</div>
+            <div class="c-div">
+            <ul class="c-form">
+              <li class="c-form-t">Name<input type="text" /><div class="c-form-line"></div></li>
+              <li class="c-form-t">E-Mail<input type="text" /><div class="c-form-line"></div></li>
+              <li class="c-form-t">Subject<input type="text" /><div class="c-form-line"></div></li>
+              <li class="c-form-t">Message<input type="text" /><div class="c-form-line"></div></li>
+            </ul>
+            <button  type="button" onclick="(submitMessage('Your Message Has Been Sent, Thank You!'))">Submit</button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="js/jquery-1.3.2.min.js"></script>
 <script src="js/jquery-1.4.4.min.js"></script>
 <script src="js/jquery-1.6.1.min.js"></script>
 <script src="js/stickyfill.js"></script>
 <script src="js/app.js"></script>
+<script type="text/javascript">
+// Get the headers position from the top of the page, plus its own height
+
+$(window).scroll(function(){
+    if($(window).scrollTop() > 0) {
+      $('.header-nav')[0].classList.add('h-shadow');
+    }
+    else {
+      $('.header-nav')[0].classList.remove('h-shadow');
+    }
+});
+
+
+$('.p-arrow-r').click(function() {
+  var x = $('.arrow-icon').index($(this));
+  var pContainer = $('#slider');
+  nextSlide(pContainer);
+})
+
+$('.p-arrow-l').click(function() {
+  var x = $('.arrow-icon').index($(this));
+  var pContainer = $('#slider');
+  previousSlide(pContainer);
+})
+
+// Do this on load just in case the user starts half way down the page
+$('.s-btn')[0].classList.add('s-selector');
+$('.selector-nav')[0].style = "display: block";
+</script>
+<script>
+		var map;
+		function initMap() {
+			//Constructor creates a new map -only cneter and zoom are required.
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 33.405439, lng: -111.812865},
+				zoom: 10
+			});
+			var home = {lat: 33.405439, lng: -111.812865};
+			var marker = new google.maps.Marker({
+				position: home,
+				map: map,
+				title: 'First Marker!'
+			});
+			var infowindow = new google.maps.InfoWindow({
+				content: "Matt's House"
+			});
+			marker.addListener('click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWlVTV95dBUsaLbIE0nTBsKaJQezCPoWk&v=3&callback=initMap">
+	</script>
+
 </body>
 </html>
